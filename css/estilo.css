@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*mobil*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #708a70; }
+  header {
+    text-align: center; }
+    header .tamañoLogo {
+      height: 100px;
+      width: 100px; }
+    header h1 {
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: yellow; }
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid;
+    background-color: white; }
+  .link {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .link a {
+      text-decoration: none; }
+  .grilla {
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 220px 23% 220px 23%;
+    grid-template-areas: "rugby" "contenidouno" "hockey" "contenidodos";
+    row-gap: 15px;
+    justify-content: center; }
+  .caja {
+    grid-area: rugby; }
+    .caja .rugby {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .cajados {
+    grid-area: hockey; }
+    .cajados .hockey {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .contenedor {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidouno; }
+    .contenedor .contenido {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+  .contenedordos {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidodos; }
+  .contacto {
+    text-align: center; }
+    .contacto .colorcuadro {
+      background-color: #ffff69; }
+  .div {
+    display: flex;
+    justify-content: center; }
+    .div .tamanoFixture {
+      height: 300px;
+      width: 300px;
+      transition: width 2s , height 1s; }
+    .div .tamanoFixture:hover {
+      height: 400px;
+      width: 400px; }
+  .divpadre {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 380px 380px 380px 380px;
+    grid-template-areas: "camiseta" "rugby" "hockey" "jugadores";
+    row-gap: 10px;
+    justify-content: center; }
+    .divpadre .hijouno {
+      grid-area: camiseta; }
+    .divpadre .hijodos {
+      grid-area: rugby; }
+    .divpadre .hijotres {
+      grid-area: hockey; }
+    .divpadre .hijocuatro {
+      grid-area: jugadores; }
+  .alturaFoto {
+    border: 2px solid;
+    width: 99%;
+    height: 100%; }
+  .tablafondo {
+    border: solid;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .tamanoequipo {
+    height: 15px; }
+  .bordes {
+    border: 1px solid; }
+  .formaLetras {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .inforugby, .infohockey {
+    color: black;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .tamaniologo {
+    height: 50px;
+    width: 50px; }
+  .Logos {
+    display: flex;
+    justify-content: center; } }
+
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #6e9a6e; }
+  header {
+    text-align: center; }
+    header .tamañoLogo {
+      height: 150px;
+      width: 150px; }
+    header h1 {
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: yellow; }
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid;
+    background-color: white; }
+  .link {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .link a {
+      text-decoration: none; }
+  .caja {
+    grid-area: rugby; }
+    .caja .rugby {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .cajados {
+    grid-area: hockey; }
+    .cajados .hockey {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .contenedor {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidouno; }
+    .contenedor .contenido {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+  .contenedordos {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidodos; }
+  .grilla {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 400px 45%;
+    grid-template-areas: "rugby         hockey" "contenidouno  contenidodos";
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center; }
+  .contacto {
+    text-align: center; }
+    .contacto .colorcuadro {
+      background-color: #ffff69; }
+  .tamanoFixture {
+    transition: width 2s , height 1s;
+    height: 500px;
+    width: 500px; }
+  .tamanoFixture:hover {
+    height: 600px;
+    width: 600px; }
+  .div {
+    display: flex;
+    justify-content: center; }
+    .div .tamanoFixture {
+      height: 500px;
+      width: 500px;
+      transition: width 2s , height 1s; }
+    .div .tamanoFixture:hover {
+      height: 600px;
+      width: 600px; }
+  .divpadre {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-areas: "camiseta" "rugby" "hockey" "jugadores";
+    row-gap: 10px;
+    justify-content: center; }
+    .divpadre .hijouno {
+      grid-area: camiseta; }
+    .divpadre .hijodos {
+      grid-area: rugby; }
+    .divpadre .hijotres {
+      grid-area: hockey; }
+    .divpadre .hijocuatro {
+      grid-area: jugadores; }
+  .alturaFoto {
+    height: 100%;
+    width: 100%;
+    border: 2px solid; }
+  .tablafondo {
+    border: solid;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .tamanoequipo {
+    height: 15px; }
+  .bordes {
+    border: 1px solid; }
+  .formaLetras {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .inforugby, .infohockey {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .tamaniologo {
+    height: 50px;
+    width: 50px; }
+  .Logos {
+    display: flex;
+    justify-content: center; } }
+
+/*escritorio*/
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #6ea36e; }
+  header {
+    text-align: center; }
+    header .tamañoLogo {
+      height: 150px;
+      width: 150px; }
+    header h1 {
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: yellow; }
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid;
+    background-color: white; }
+  .link {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+    .link a {
+      text-decoration: none; }
+  .caja {
+    grid-area: rugby; }
+    .caja .rugby {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .cajados {
+    grid-area: hockey; }
+    .cajados .hockey {
+      height: 100%;
+      width: 99%;
+      border: solid; }
+  .contenedor {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidouno; }
+    .contenedor .contenido {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+  .contenedordos {
+    border: solid;
+    background-color: white;
+    text-align: center;
+    grid-area: contenidodos; }
+  .grilla {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 400px 250px;
+    grid-template-areas: "rugby         hockey" "contenidouno  contenidodos";
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center; }
+  .contacto {
+    text-align: center; }
+    .contacto .colorcuadro {
+      background-color: #ffff69; }
+  .div {
+    display: flex;
+    justify-content: center; }
+    .div .tamanoFixture {
+      height: 700px;
+      width: 700px;
+      transition: width 2s , height 1s; }
+    .div .tamanoFixture:hover {
+      height: 800px;
+      width: 800px; }
+  .divpadre {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-areas: "camiseta" "rugby" "hockey" "jugadores";
+    row-gap: 10px;
+    justify-content: center; }
+    .divpadre .hijouno {
+      grid-area: camiseta; }
+    .divpadre .hijodos {
+      grid-area: rugby; }
+    .divpadre .hijotres {
+      grid-area: hockey; }
+    .divpadre .hijocuatro {
+      grid-area: jugadores; }
+  .alturaFoto {
+    height: 100%;
+    width: 100%;
+    border: 2px solid; }
+  .tablafondo {
+    border: solid;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .tamanoequipo {
+    height: 20px; }
+  .bordes {
+    border: 1px solid; }
+  .formaLetras {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .inforugby, .infohockey {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; }
+  .tamaniologo {
+    height: 50px;
+    width: 50px; }
+  .Logos {
+    display: flex;
+    justify-content: center; } }
